@@ -2,13 +2,16 @@
   "name": "projeto_test",
   "version": "0.1.0",
   "private": true,
-"scripts": {
+  "scripts": {
     "serve": "vue-cli-service serve --openssl-legacy-provider serve",
     "build": "vue-cli-service build --openssl-legacy-provider build",
-    "lint": "vue-cli-service lint --openssl-legacy-provider lint"
-},
+    "lint": "vue-cli-service lint --openssl-legacy-provider lint",
+    "start": "node server.js"
+  },
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": "^4.17.3",
+    "serve-static": "^1.15.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"
   },
