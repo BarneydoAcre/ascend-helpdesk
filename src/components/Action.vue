@@ -1,10 +1,10 @@
 <template>
     <div id="Action">
         <a href="#NovoTicket"><b>+</b> Ticket</a>
-        <a><b>+</b> Cliente</a>
+        <a class='disabled'><b>+</b> Empresa</a>
+        <a class='disabled'><b>+</b> Cliente</a>
         <a v-if="list_grid" @click="list_grid=false"><b>List</b>/Grid</a>
         <a v-else @click="list_grid=true">List/<b>Grid</b></a>
-        <a>Aplicar Filtro</a>
     </div>
 </template>
 
@@ -40,5 +40,11 @@ export default {
 }
 #Action a:hover {
     background-color: rgb(146, 146, 146);
+}
+.disabled {
+  background: rgb(100,100,100) !important;
+}
+.disabled:hover {
+  background: rgb(100,100,100) !important;
 }
 </style>

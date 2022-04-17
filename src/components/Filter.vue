@@ -51,6 +51,9 @@
                 <h6>Até:</h6>
                 <input name="data_final" type="date" id="Filter_options_data_input">
             </div>
+            <div id="Filter_options_aplicar" class="input-field">
+                <button type="submit">Aplicar Filtro</button>
+            </div>
         </form>
     </div>
 </template>
@@ -94,5 +97,17 @@ export default {
     width: 140px;
     height: 30px;
     background: rgb(255, 255, 255,0)
+}
+#Filter_options_aplicar button {
+    background-color: rgb(191, 191, 191);
+    width: 100px;
+    color: #444;
+    line-height: 30px;
+    text-align: center;
+    border: unset;
+    text-decoration: unset;
+}
+#Filter_options_aplicar button:hover {
+    background-color: rgb(146,146,146);
 }
 </style>

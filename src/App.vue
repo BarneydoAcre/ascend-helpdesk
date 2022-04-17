@@ -16,6 +16,12 @@
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
 }
+a .disabled {
+  background: rgb(78, 78, 78) !important;
+}
+a .disabled:hover {
+  background: rgb(77, 77, 77) !important;
+}
 input {
     border: unset;
     border-bottom: 1px solid #999;

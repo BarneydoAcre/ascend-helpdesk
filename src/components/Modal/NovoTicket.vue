@@ -28,6 +28,9 @@
           <h6>Descrição do cliente</h6>
           <textarea type="text"></textarea>
         </div>
+        <div class="input-field" style="width: 100%;text-align: right;">
+          <button type="submit">Criar</button>
+        </div>
       </form>
     </div>
   </div>
@@ -113,11 +116,22 @@ h1 {
 .input-field {
   margin: 0 16px 0 16px;
 }
+.input-field button {
+  width: 100px;
+  height: 30px;
+}
 input {
   width: 100%;
 }
 textarea {
   width: 100%;
   margin-top: 4px;
+}
+button {
+  border: none;
+  background-color: rgb(191, 191, 191);
+}
+button:hover {
+  background-color: rgb(146, 146, 146);
 }
 </style>
