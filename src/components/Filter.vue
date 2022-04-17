@@ -95,9 +95,6 @@ export default {
     height: 30px;
     background: rgb(255, 255, 255,0)
 }
-#Filter_options div input:focus-visible {
-    outline: unset;
-}
 h6 {
     margin: unset;
     padding: unset;

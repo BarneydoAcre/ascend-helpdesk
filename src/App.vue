@@ -16,4 +16,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
 }
+input:focus-visible {
+  outline: unset;
+}
 </style>

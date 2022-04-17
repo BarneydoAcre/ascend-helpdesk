@@ -7,18 +7,16 @@
                 <div type="submit" id="SideBar_search_send"><i class="material-icons-outlined">search</i></div>
             </div>
             <table id="SideBar_search_result">
-                <ul>
-                    <li>{{ search_text }}</li>
-                    <li></li>
-                </ul>
+                <tr>
+                    <td>{{ search_text }}</td>
+                    <td></td>
+                </tr>
             </table>
         </form>
         <div id="SideBar_menu">
-            <ul>
-                <li><button class="btn waves-effect waves-light"><span class="material-icons-outlined">person</span>Perfil</button></li>
-                <li><button class="btn waves-effect waves-light"><span class="material-icons-outlined">settings</span>Configurações</button></li>
-                <li><button class="btn waves-effect waves-light"><span class="material-icons-outlined">help_outline</span>Ajuda</button></li>
-            </ul>
+            <button class="btn"><span class="material-icons-outlined">person</span><p>Perfil</p></button>
+            <button class="btn"><span class="material-icons-outlined">settings</span><p>Configurações</p></button>
+            <button class="btn"><span class="material-icons-outlined">help_outline</span><p>Ajuda</p></button>
         </div>
         <div id="SideBar_version">v1.00.001</div>
     </div>
@@ -112,6 +110,7 @@ export default {
     border-radius: 8px;
 }
 #SideBar_search_text {
+    border: unset;
     width: 50px;
     height: 30px !important;
     color: #444;
@@ -124,10 +123,8 @@ export default {
     color: #cacaca;
     transition: .3s ease-in-out;
 }
-/* #SideBar:not(:hover) #SideBar_search_text {
-} */
 #SideBar_search_text:focus {
-    border-bottom: 1px solid #cacaca !important;
+    border-bottom: 1px solid #9e9e9e !important;
     box-shadow: 0 1px 0 #cacaca !important;
 }
 #SideBar_search_send{
@@ -152,33 +149,37 @@ export default {
 
 #SideBar ul {
     padding-inline-start: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-#SideBar ul li .btn {
+#SideBar .btn {
+    border: unset;
     width: 50px;
-    margin: 2px;
-    background-color: #777;
+    height: 30px;
+    margin: 8px;
+    background-color: #666;
+    transition: .3s ease-in-out;
 
     display: flex;
     align-items: center;
 }
-#SideBar ul li .btn:hover {
-    background-color: #888;
+#SideBar .btn:hover {
+    background-color: #444;
 }
-#SideBar ul li .btn .material-icons-outlined {
-    margin-right: 12px;
-}
-#SideBar:hover ul li .btn  {
+#SideBar:hover .btn  {
     transition: .3s ease-in-out;
     width: 200px;
 }
-#SideBar:not(:hover) ul li .btn  {
-    transition: .3s ease-in-out;
-    width: 50px;
+#SideBar:hover .btn .material-icons-outlined {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+#SideBar .btn .material-icons-outlined {
+    margin: 0 auto;
+}
+#SideBar .btn p {
+    display: none;
+}
+#SideBar:hover .btn p {
+    display: block;
 }
 
 /************************************************/
@@ -186,5 +187,10 @@ export default {
 #SideBar_version {
     color: #999;
     font-size: 10px;
+}
+
+/************************************************/
+
+#btn {
 }
 </style>
