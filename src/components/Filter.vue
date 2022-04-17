@@ -69,9 +69,9 @@ export default {
 
 <style scoped>
 #Filter {
-    grid-area: filter;
-    
-    height: inherit;
+    background-color: rgb(216,216,216);
+    border-radius: 5px;
+    margin: 16px 16px 16px 0;
 }
 #Filter_options {
     display: flex;
@@ -80,13 +80,13 @@ export default {
     align-items: center;
     align-content: center;
 
-    background-color: rgb(214, 214, 214);
     border-radius: 4px;
     width: 100%;
     height: 100%;
 }
 #Filter_options div {
-    margin: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 #Filter_options div input {
     border: unset;

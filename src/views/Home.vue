@@ -35,12 +35,10 @@ html, body {
   width: 100%;
   height: 100%;
   display: grid; 
-  grid-template-columns: 60px repeat(3, calc(33.33% - 20px));
-  grid-template-rows: 15vh 20vh 65vh;
+  grid-template-columns: 60px calc(100vw - 60px);
+  grid-template-rows: 100vh;
   grid-template-areas: 
-  "sidebar data   data   data"
-  "sidebar ticket ticket ticket"
-  "sidebar ticket ticket ticket"; 
+  "sidebar ticket"; 
 }
 #SideBar {
   grid-area: sidebar;
