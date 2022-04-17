@@ -1,5 +1,6 @@
 <template>
-    <div id="Data"></div>
+    <div id="Data">
+    </div>
 </template>
 
 <script>
@@ -13,4 +14,5 @@ export default {
     background-color: rgb(216, 216, 216);
     border-radius: 5px;
 }
+
 </style>

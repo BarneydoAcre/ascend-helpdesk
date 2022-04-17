@@ -4,6 +4,7 @@
         <Action />
         <Data />
         <Table />
+        <NovoTicket />
     </div>
 </template>
 
@@ -12,6 +13,7 @@ import Table from '@/components/Table.vue';
 import Data from '@/components/Data.vue';
 import Filter from '@/components/Filter.vue';
 import Action from '@/components/Action.vue';
+import NovoTicket from '@/components/Modal/NovoTicket.vue';
 
 export default {
     name: 'Ticket',
@@ -20,7 +22,8 @@ export default {
         Filter,
         Action,
         Table,
-        Data
+        Data,
+        NovoTicket
     },
     data () {
         return {
@@ -55,21 +58,21 @@ export default {
 #Action {
     grid-area: action;
     margin: 16px 8px 8px 6px;
-    filter: drop-shadow(0 4px 8px #9e9e9e);
+    filter: drop-shadow(0 4px 4px #9e9e9e);
 }
 #Data {
     grid-area: data;
     margin: 16px 16px 16px 8px;
-    filter: drop-shadow(0 4px 8px #9e9e9e);
+    filter: drop-shadow(0 4px 4px #9e9e9e);
 }
 #Filter {
     grid-area: filter;
     margin: 8px 8px 16px 6px;
-    filter: drop-shadow(0 4px 8px #9e9e9e);
+    filter: drop-shadow(0 4px 4px #9e9e9e);
 }
 #Table {
     grid-area: table;
     margin: 16px 16px 16px 6px;
-    filter: drop-shadow(0 4px 8px #9e9e9e);
+    filter: drop-shadow(0 4px 4px #9e9e9e);
 }
 </style>

@@ -1,16 +1,20 @@
 <template>
     <div id="Action">
-        <button><b>+</b> Ticket</button>
-        <button><b>+</b> Cliente</button>
-        <button><b>+</b> Teste</button>
-        <button>Aplicar Filtro</button>
+        <a href="#NovoTicket"><b>+</b> Ticket</a>
+        <a><b>+</b> Cliente</a>
+        <a v-if="list_grid" @click="list_grid=false"><b>List</b>/Grid</a>
+        <a v-else @click="list_grid=true">List/<b>Grid</b></a>
+        <a>Aplicar Filtro</a>
     </div>
 </template>
 
 <script>
 export default {
     name: 'Action',
-    methods: {
+    data () {
+        return {
+            list_grid: true,
+        }
     }
 }
 </script>
@@ -25,12 +29,16 @@ export default {
     justify-content: space-evenly;
     align-items: center;
 }
-#Action button {
+#Action a {
+    background-color: rgb(191, 191, 191);
     width: 100px;
-    height: 30px;
-    border: unset
+    color: #444;
+    line-height: 30px;
+    text-align: center;
+    border: unset;
+    text-decoration: unset;
 }
-#Action button:hover {
-    background-color: #666;
+#Action a:hover {
+    background-color: rgb(146, 146, 146);
 }
 </style>

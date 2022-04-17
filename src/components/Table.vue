@@ -10,59 +10,11 @@
                 </tr>
             </thead>
             <tbody id="Table_header">
-                <tr id="Table_data_row">
-                    <td id="Table_data_id">#00001</td>
-                    <td id="Table_data_assunto">Ajuda com emissão de nota fiscal</td>
-                    <td id="Table_data_status">Em Atendimento</td>
-                    <td id="Table_data_tempo">1 hora e 30 minutos</td>
-                </tr>
-                <tr id="Table_row">
-                    <td id="Table_data_id">#00002</td>
-                    <td id="Table_data_assunto">Problema com impressora</td>
-                    <td id="Table_data_status">Finalizado</td>
-                    <td id="Table_data_tempo">27 minutos</td>
-                </tr>
-                <tr id="Table_row">
-                    <td id="Table_data_id">#00002</td>
-                    <td id="Table_data_assunto">Problema com impressora</td>
-                    <td id="Table_data_status">Finalizado</td>
-                    <td id="Table_data_tempo">27 minutos</td>
-                </tr>
-                <tr id="Table_row">
-                    <td id="Table_data_id">#00002</td>
-                    <td id="Table_data_assunto">Problema com impressora</td>
-                    <td id="Table_data_status">Finalizado</td>
-                    <td id="Table_data_tempo">27 minutos</td>
-                </tr>
-                <tr id="Table_row">
-                    <td id="Table_data_id">#00002</td>
-                    <td id="Table_data_assunto">Problema com impressora</td>
-                    <td id="Table_data_status">Finalizado</td>
-                    <td id="Table_data_tempo">27 minutos</td>
-                </tr>
-                <tr id="Table_row">
-                    <td id="Table_data_id">#00002</td>
-                    <td id="Table_data_assunto">Problema com impressora</td>
-                    <td id="Table_data_status">Finalizado</td>
-                    <td id="Table_data_tempo">27 minutos</td>
-                </tr>
-                <tr id="Table_row">
-                    <td id="Table_data_id">#00002</td>
-                    <td id="Table_data_assunto">Problema com impressora</td>
-                    <td id="Table_data_status">Finalizado</td>
-                    <td id="Table_data_tempo">27 minutos</td>
-                </tr>
-                <tr id="Table_row">
-                    <td id="Table_data_id">#00002</td>
-                    <td id="Table_data_assunto">Problema com impressora</td>
-                    <td id="Table_data_status">Finalizado</td>
-                    <td id="Table_data_tempo">27 minutos</td>
-                </tr>
-                <tr id="Table_row">
-                    <td id="Table_data_id">#00002</td>
-                    <td id="Table_data_assunto">Problema com impressora</td>
-                    <td id="Table_data_status">Finalizado</td>
-                    <td id="Table_data_tempo">27 minutos</td>
+                <tr id="Table_data_row" v-for="t in tickets" :key="t.id">
+                    <td id="Table_data_id">#{{ t.id }}</td>
+                    <td id="Table_data_assunto">{{ t.assunto }}</td>
+                    <td id="Table_data_status">{{ t.status }}</td>
+                    <td id="Table_data_tempo">{{ t.tempo }}</td>
                 </tr>
             </tbody>
         </table>
@@ -72,6 +24,23 @@
 <script>
 export default {
     name: 'Table',
+    data () {
+        return {
+            tickets: [{
+                id: '00001', 
+                assunto: 'Ajuda com emissão de nota fiscal', 
+                status: 'Em Atendimento', 
+                tempo:'1 hora e 30 minutos'
+                },
+                {
+                id: '00002', 
+                assunto: 'Problema com impressora', 
+                status: 'Finalizado', 
+                tempo:'27 minutos'
+                },
+            ],
+        }
+    }
 }
 </script>
 
