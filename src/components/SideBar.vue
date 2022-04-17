@@ -155,14 +155,14 @@ export default {
     width: 50px;
     height: 30px;
     margin: 8px;
-    background-color: #666;
+    background-color: rgb(191, 191, 191);
     transition: .3s ease-in-out;
 
     display: flex;
     align-items: center;
 }
 #SideBar .btn:hover {
-    background-color: #444;
+    background-color: rgb(146, 146, 146);
 }
 #SideBar:hover .btn  {
     transition: .3s ease-in-out;

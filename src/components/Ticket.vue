@@ -55,17 +55,21 @@ export default {
 #Action {
     grid-area: action;
     margin: 16px 8px 8px 6px;
+    filter: drop-shadow(0 4px 8px #9e9e9e);
 }
 #Data {
     grid-area: data;
     margin: 16px 16px 16px 8px;
+    filter: drop-shadow(0 4px 8px #9e9e9e);
 }
 #Filter {
     grid-area: filter;
     margin: 8px 8px 16px 6px;
+    filter: drop-shadow(0 4px 8px #9e9e9e);
 }
 #Table {
     grid-area: table;
     margin: 16px 16px 16px 6px;
+    filter: drop-shadow(0 4px 8px #9e9e9e);
 }
 </style>
